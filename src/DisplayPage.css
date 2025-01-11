@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+.display-page {
+    background-image: url("./assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.nav-button1{
+    width: 0;
+    height: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    top: 500px;
+    left: 300px;
+}
+.nav-button2 {
+    width: 0;
+    height: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    
+}
+
+.nav-button1 {
+    
+    border-top: 25px solid transparent;
+    border-right: 40px solid #FAECFD;
+    border-bottom: 25px solid transparent;
+}
+
+.nav-button2 {
+    border-top: 25px solid transparent;
+    border-left: 40px solid #FAECFD;
+    border-bottom: 25px solid transparent;
+}
+
+.back-button {
+    position: absolute;
+    top: 50px;
+    left: 290px;
+    padding: 8px 20px;
+    background-color: #344985;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "Space mono";
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #2a3a6a;
+}
+
+.gallery-card {
+    background-color: rgba(255, 240, 255, 0.95);
+    border-radius: 12px;
+    padding: 30px;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    gap: 40px;
+    height: 500px; 
+}
+
+.left-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start; 
+    max-height: 100%;
+    overflow:hidden; 
+}
+
+.card-title {
+    font-family: "Space mono";
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+}
+
+.card-image {
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    object-fit: contain; 
+    max-height: calc(100% - 100px); 
+}
+
+.card-date {
+    font-family: "Space mono";
+    font-size: 16px;
+    
+    text-align: center;
+    margin-top: 5px;
+}
+
+.description-container {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 15px; 
+    word-wrap: break-word;
+}
+
+.description-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.description-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.description-container::-webkit-scrollbar-thumb {
+    background-color: #FA87B6;
+    border-radius: 4px;
+}
+
+.card-description {
+    font-family: "Space mono";
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+}

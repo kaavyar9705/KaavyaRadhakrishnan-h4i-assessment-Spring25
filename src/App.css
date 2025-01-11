@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url("./assets/background.jpg"); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  text-align: center;
+  color: #fff;
+}
+
+.title {
+  font-size: 35px;
+  font-family: 'Space Mono';
+  font-weight: 400;
+  color: black;
+  margin-bottom: 20px;
+  padding: 5px;
+  background: #FAECFD;
+  border-radius: 10px;
+  display: inline-block;
+  justify-self: center;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  
+}
+
+.search-input {
+  padding: 10px;
+  width: 241px;
+  border: 3px solid #15418c;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.year-range {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #fff;
+}
+
+.year-range select {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-button {
+  padding: 5px 10px;
+  background: #15418C;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Space Mono';
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0040c8;
+}
+
+.error-message {
+  color: white;
+  background-color: red;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  min-height: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.search-form .error-placeholder {
+  min-height: 30px; 
+}
