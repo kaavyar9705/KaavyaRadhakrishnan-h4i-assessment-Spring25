@@ -53,9 +53,6 @@ const LandingPage = () => {
 
 
 
-
-
-
           </p>
         </div>
         <div className="year-range">
